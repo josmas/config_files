@@ -12,6 +12,7 @@ set wildmenu
 set hlsearch
 set incsearch
 set hidden
+set pastetoggle=<F2>
 
 filetype plugin indent on
 syntax enable
