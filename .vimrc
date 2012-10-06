@@ -38,6 +38,32 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+"Functions for commenting/uncommenting a block of Visually selected text
+function Comment(fl, ll)
+  let i=a:fl
+  let comment="//"
+  while i<=a:ll
+    let cl=getline(i)
+    let cl2=comment.cl
+    call setline(i, cl2)
+    let i=i+1
+  endwhile
+endfunction
+
+function UnComment(fl, ll)
+  let i=a:fl
+  let comment="//"
+  while i<=a:ll
+    let cl=getline(i)
+    let cl2=substitute(cl, "//", "", "")
+    call setline(i, cl2)
+    let i=i+1
+  endwhile
+endfunction
+
+:noremap <silent> ,/ :call Comment('.', '.')<CR>+
+:noremap <silent> ,. :call UnComment('.', '.')<CR>+
+
 "Disable arrows
 map   <up>    <nop>
 map   <down>  <nop>
