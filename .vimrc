@@ -21,6 +21,7 @@ colorscheme desert
 "Custom remaps ---  works better with Caps Lock key mapped to Control
 
 let mapleader = ","
+map <Leader>r *Nciw
 
 inoremap jj <ESC>
 
