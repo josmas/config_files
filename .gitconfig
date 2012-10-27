@@ -3,6 +3,7 @@
   email = YOUR_EMAIL_HERE 
 [alias]
   ci = commit
+  co = checkout
   br = branch
   st = status
   lp = log --pretty=oneline
