@@ -1,0 +1,12 @@
+[user]
+  name = YOUR_NAME_HERE
+  email = YOUR_EMAIL_HERE 
+[alias]
+  ci = commit
+  br = branch
+  st = status
+  lp = log --pretty=oneline
+[core]
+  editor = vim
+[color]
+  ui = true
