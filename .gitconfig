@@ -6,6 +6,8 @@
   br = branch
   st = status
   lp = log --pretty=oneline
+  ld = log --pretty=format:'%H - %an, %ar : %s'
+  lg = log --pretty=format:'%h - %an, %s' --graph
 [core]
   editor = vim
 [color]
