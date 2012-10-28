@@ -22,6 +22,11 @@ colorscheme desert
 
 let mapleader = ","
 map <Leader>r *Nciw
+map <leader>ss :setlocal spell!<cr>
+map <leader>sn ]s
+map <leader>sp [s
+map <leader>sa zg
+map <leader>s? z=
 
 inoremap jj <ESC>
 
