@@ -27,6 +27,9 @@ map <leader>sn ]s
 map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
+//Fold and unfold up to '}'
+map <leader>f zf}
+map <leader>ff zo
 
 inoremap jj <ESC>
 
