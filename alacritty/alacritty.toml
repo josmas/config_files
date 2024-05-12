@@ -12,4 +12,5 @@ TERM = "xterm-256color"
 
 [window]
 option_as_alt = "Both"
+decorations = "None"
 
