@@ -1,1 +1,7 @@
-My config files <--- :)
+# Config files
+A collection of config files.
+
+## nvim
+Most recent nvim config is at https://github.com/josmas/dot_config-nvim, based on the lazyvim template.
+
+Jos, May 12, 2o24
