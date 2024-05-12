@@ -1,6 +1,5 @@
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
-keybinds {
-    unbind "Ctrl n"
+keybinds clear-defaults=true {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
@@ -9,7 +8,7 @@ keybinds {
         bind "Ctrl g" { SwitchToMode "Normal"; }
     }
     resize {
-        bind "Ctrl i" { SwitchToMode "Normal"; }
+        bind "Ctrl b" { SwitchToMode "Normal"; }
         bind "h" "Left" { Resize "Increase Left"; }
         bind "j" "Down" { Resize "Increase Down"; }
         bind "k" "Up" { Resize "Increase Up"; }
@@ -39,7 +38,7 @@ keybinds {
         bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}
     }
     move {
-        bind "Ctrl h" { SwitchToMode "Normal"; }
+        bind "Ctrl y" { SwitchToMode "Normal"; }
         bind "n" "Tab" { MovePane; }
         bind "p" { MovePaneBackwards; }
         bind "h" "Left" { MovePane "Left"; }
@@ -165,7 +164,7 @@ keybinds {
         bind "Ctrl p" { SwitchToMode "Pane"; }
     }
     shared_except "resize" "locked" {
-        bind "Ctrl i" { SwitchToMode "Resize"; }
+        bind "Ctrl b" { SwitchToMode "Resize"; }
     }
     shared_except "scroll" "locked" {
         bind "Ctrl s" { SwitchToMode "Scroll"; }
@@ -177,7 +176,7 @@ keybinds {
         bind "Ctrl t" { SwitchToMode "Tab"; }
     }
     shared_except "move" "locked" {
-        bind "Ctrl h" { SwitchToMode "Move"; }
+        bind "Ctrl y" { SwitchToMode "Move"; }
     }
     shared_except "tmux" "locked" {
         bind "Ctrl b" { SwitchToMode "Tmux"; }
