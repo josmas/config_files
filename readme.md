@@ -14,7 +14,7 @@ Jos, May 12, 2o24
 
 I am in the middle of moving all config files to this repo to be used with GNU stow.
 
-For now only nvim is available, which means that the dot_config-nvim repo mentioned above is not being used anymore.
+For now only nvim, zellij and alacritty are available. This also means that the dot_config-nvim repo mentioned above is not being used anymore.
 
 ## How to use stow
 
