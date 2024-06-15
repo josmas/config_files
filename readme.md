@@ -18,6 +18,6 @@ For now only nvim is available, which means that the dot_config-nvim repo mentio
 
 ## How to use stow
 
-To use stow simply `cd` into a directory and run something like `stow nvim -t $HOME`.
+To use stow simply clone and `cd` into this directory, and then run the stow command for each package you want to symlink, for instance: `stow nvim -t $HOME`.
 
 Jos, June 15, 2o24
