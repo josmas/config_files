@@ -16,7 +16,11 @@ I am in the middle of moving all config files to this repo to be used with GNU s
 
 For now only tmux, nvim, zellij and alacritty are available. This also means that the dot_config-nvim repo mentioned above is not being used anymore.
 
+For tmux, make sure to install [TPM](https://github.com/tmux-plugins/tpm) and then use `ctrl + I` to pull in the plugins.
+
 ## How to use stow
+
+GNU stow can be installed from homebrew or any other package manager.
 
 To use stow simply clone and `cd` into this directory, and then run the stow command for each package you want to symlink, for instance: `stow nvim -t $HOME`.
 
