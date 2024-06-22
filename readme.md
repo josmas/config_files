@@ -16,7 +16,7 @@ I am in the middle of moving all config files to this repo to be used with GNU s
 
 For now only tmux, nvim, zellij and alacritty are available. This also means that the dot_config-nvim repo mentioned above is not being used anymore.
 
-For tmux, make sure to install [TPM](https://github.com/tmux-plugins/tpm) and then use `ctrl + I` to pull in the plugins.
+For tmux, make sure to install [TPM](https://github.com/tmux-plugins/tpm) and then use `ctrl + I` to pull in the plugins. Also to have sessionx working, bat and fzf need to be installed.
 
 ## How to use stow
 
