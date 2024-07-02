@@ -10,4 +10,6 @@ alias -g ONE="| awk '{ print \$1}'"
 alias g="git"
 alias v="nvim"
 alias t="tmux"
+alias dps="docker ps"
+alias k="kubectl"
 
