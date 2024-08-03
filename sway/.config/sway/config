@@ -40,15 +40,28 @@ default_border pixel 2
 # output * bg $HOME/.config/sway/wallpaper.jpg fill
 
 
-#====================================#
-# Activate the panel                 #
-#====================================#
+#====================#
+# Activate the panel #
+#====================#
 # Set the waybar command for the application launcher:
 bar {
     swaybar_command waybar
 }
 
 
+#=================#
+# Keyboard config #
+#=================#
+input "type:keyboard" {
+  xkb_layout ie,us
+  xkb_options ctrl:nocaps
+}
+
+input "type:touchpad" {
+  tap enabled
+  natural_scroll enabled
+  scroll_factor 0.5
+}
 #====================================#
 # Keyboard Shortcuts (Sway-specific) #
 #====================================#
@@ -134,15 +147,11 @@ bindsym $mod+r mode "resize"
 # Keyboard Shortcuts (Workspaces) #
 #=================================#
 # Switch to workspace
-set $ws1 "1 - Communication"
+set $ws1 "1 - Coding"
 set $ws2 "2 - Browsing"
-set $ws3 "3 - System Administration"
-set $ws4 "4 - Learn Linux TV"
-set $ws5 "5 - Media"
-set $ws6 "6 - Writing"
-set $ws7 "7 - Homelab"
-set $ws8 "8 - Home Assistant"
-set $ws9 "9 - Unwind"
+set $ws3 "3 - Config"
+set $ws4 "4 - Writing"
+set $ws5 "5 - Misc"
 
 # Move between workspaces
 bindsym $mod+1 workspace $ws1
@@ -150,10 +159,6 @@ bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace $ws5
-bindsym $mod+6 workspace $ws6
-bindsym $mod+7 workspace $ws7
-bindsym $mod+8 workspace $ws8
-bindsym $mod+9 workspace $ws9
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -161,10 +166,6 @@ bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws4
 bindsym $mod+Shift+5 move container to workspace $ws5
-bindsym $mod+Shift+6 move container to workspace $ws6
-bindsym $mod+Shift+7 move container to workspace $ws7
-bindsym $mod+Shift+8 move container to workspace $ws8
-bindsym $mod+Shift+9 move container to workspace $ws9
 
 
 #=============================#
@@ -245,6 +246,7 @@ bindsym $mod+space exec $menu
 
 # Open the application launcher (alternate version):
 bindsym $mod+d exec $menu
+
 
 #======#
 # Misc #
