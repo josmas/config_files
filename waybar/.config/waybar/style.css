@@ -104,17 +104,13 @@ window#waybar {
   background-color: #eb4d4b;
 }
 
-/* Custom Stuff */
-#custom-audio {
-  background: transparent;
+#pulseaudio {
   color: #ffffff;
   opacity: 0.7;
   padding: 2px 8px;
 }
 
-#custom-hostname {
-  background: transparent;
-  color: #ffffff;
-  padding: 2px 8px;
-  opacity: 0.7;
+#pulseaudio.muted {
+  background-color: #90b1b1;
+  color: #2a5c45;
 }

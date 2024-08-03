@@ -1,20 +1,3 @@
-//====================================================================================================//
-// Waybar Configuration File                                                                          //
-//----------------------------------------------------------------------------------------------------//
-// Purpose: Creates a minimalistic (yet functional) waybar at                                         //
-// the top of the screen.                                                                             //
-// themes and colors, set the wallpaper, and more.                                                    //
-//                                                                                                    //
-// License: Creative Commons Attribution 4.0 International                                            //
-//                                                                                                    //
-// Credit:                                                                                            //
-// Battery section adapted from:                                                                      //
-// https://github.com/Egosummiki/dotfiles/blob/master/waybar/config                                   //
-//                                                                                                    //
-// Pipewire audio adapted from:                                                                       //
-// https://www.reddit.com/r/swaywm/comments/sks343/pwvolume_pipewire_volume_control_and_waybar_module //
-//====================================================================================================//
-
 {
     "layer": "top",
     "position": "top",
@@ -24,20 +7,40 @@
     "margin-bottom": 0,
 
     // Choose the order of the modules
-    "modules-center": ["sway/workspaces", "tray"],
-    "modules-left": ["custom/hostname"],
-    "modules-right": [ "custom/audio","network","battery","clock"],
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["tray"],
+    "modules-right": ["pulseaudio", "network","battery","clock"],
 
     // Configuration for individual modules
-     "sway/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": false,
-         "format": "{name}",
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "format": "{name}",
     },
 
     "tray": {
         "icon-size": 18,
         "spacing": 10,
+    },
+
+    "pulseaudio": {
+      // "scroll-step": 1, // %, can be a float
+      "format": "{volume}% {icon} {format_source}",
+      "format-bluetooth": "{volume}% {icon} {format_source}",
+      "format-bluetooth-muted": " {icon} {format_source}",
+      "format-muted": " {format_source}",
+      "format-source": "{volume}% ",
+      "format-source-muted": "",
+      "format-icons": {
+          "headphone": "",
+          "hands-free": "",
+          "headset": "",
+          "phone": "",
+          "portable": "",
+          "car": "",
+          "default": ["", "", ""]
+      },
+      "on-click": "pavucontrol"
     },
 
     "clock": {
@@ -70,20 +73,5 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "on-click-right": "bash ~/.config/rofi/wifi_menu/rofi_wifi_menu",
-    },
-
-    "custom/audio": {
-        "format": "{}",
-        "signal": 8,
-        "interval": "once",
-        "exec": "/home/jay/.config/sway/audio.sh",
-        "on-click": "pavucontrol",
-    },
-
-    "custom/hostname": {
-        "format": "🖳  {}",
-        "exec": "/usr/bin/hostname -f",
-        "interval": "once",
-        "on-click": "/usr/bin/rxvt -e /usr/bin/htop",
     },
 }
