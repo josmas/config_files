@@ -1,11 +1,11 @@
 import = [ 
-  #"~/.config/alacritty/catppuccin-latte.toml"
-  "~/.config/alacritty/catppuccin-mocha.toml"
+  "~/.config/alacritty/catppuccin-latte.toml"
+  #"~/.config/alacritty/catppuccin-mocha.toml"
 ]
 
 [font]
 normal = { family = "Hack Nerd Font Mono", style = "Regular" }
-size = 14
+size = 10
 
 [env]
 TERM = "xterm-256color"
@@ -14,3 +14,15 @@ TERM = "xterm-256color"
 option_as_alt = "Both"
 decorations = "None"
 
+[selection]
+save_to_clipboard = true
+
+[keyboard]
+bindings = [
+  { key = "V", mods = "Control", action = "Paste" }
+]
+
+[mouse]
+bindings = [
+  { mouse = "Right", action = "Paste" },
+]
