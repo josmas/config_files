@@ -15,13 +15,13 @@
   background: transparent;
   color: #ffffff;
   opacity: 0.7;
-  padding: 2px 8px;
+  padding: 2px 2px;
 }
 
 #battery.charging,
 #battery.plugged {
   color: #ffffff;
-  padding: 2px 8px;
+  padding: 2px 2px;
 }
 
 #battery.critical:not(.charging) {
@@ -38,14 +38,14 @@
   background: #1f1f1f;
   color: #ffffff;
   margin-right: 4px;
-  padding: 2px 8px;
+  padding: 2px 2px;
 }
 
 #network {
   background: transparent;
   color: #ffffff;
   opacity: 0.7;
-  padding: 2px 8px;
+  padding: 2px 2px;
 }
 
 #network.disconnected {
@@ -56,7 +56,7 @@
 #tray {
   background: #1f1f1f;
   color: #ffffff;
-  margin-left: 18px;
+  margin-left: 12px;
 }
 
 #tray > .passive {
@@ -107,7 +107,7 @@ window#waybar {
 #pulseaudio {
   color: #ffffff;
   opacity: 0.7;
-  padding: 2px 8px;
+  padding: 2px 2px;
 }
 
 #pulseaudio.muted {
