@@ -254,3 +254,8 @@ bindsym $mod+d exec $menu
 include /etc/sway/config-vars.d/*
 include /etc/sway/config.d/*
 
+# Clamshell mode
+set $laptop eDP-1
+bindswitch --locked lid:on output $laptop disable
+bindswitch --locked lid:off output $laptop enable
+
