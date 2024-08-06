@@ -256,6 +256,7 @@ include /etc/sway/config.d/*
 
 # Clamshell mode
 set $laptop eDP-1
-bindswitch --locked lid:on output $laptop disable
-bindswitch --locked lid:off output $laptop enable
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+exec_always ~/.config/sway/reload_clamshell.sh
 
