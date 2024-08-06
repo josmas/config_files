@@ -260,3 +260,7 @@ bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 exec_always ~/.config/sway/reload_clamshell.sh
 
+# Monitor config
+output DP-1 pos 0 0 res 2560x1440
+output eDP-1 pos 2560 882 res 1920x1200
+
