@@ -30,14 +30,14 @@ client.unfocused        $title_outline_unfocused $title_bg_unfocused $text_color
 client.urgent           $color_urgent            $color_urgent       $color_urgent $color_urgent         $color_urgent
 
 # Add gaps in between all application windows:
-gaps inner 8
+gaps inner 3
 gaps outer 3
 
 # Configure the default border:
 default_border pixel 4
 
 # Set the Wallpaper:
-# output * bg $HOME/.config/sway/wallpaper.jpg fill
+output * bg $HOME/.config/sway/wallpaper.jpg fill
 
 
 #====================#
@@ -45,7 +45,7 @@ default_border pixel 4
 #====================#
 # Set the waybar command for the application launcher:
 bar {
-    swaybar_command waybar
+  swaybar_command waybar
 }
 
 
