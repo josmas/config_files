@@ -1,8 +1,7 @@
 {
     "layer": "top",
-    "position": "bottom",
-    "height": 30,
-    "spacing": 4,
+    "position": "top",
+    "spacing": 6,
     "margin-top": 0,
     "margin-bottom": 0,
 
@@ -19,8 +18,8 @@
     },
 
     "tray": {
-        "icon-size": 14,
-        "spacing": 10,
+      "icon-size": 18,
+      "spacing": 10,
     },
 
     "pulseaudio": {

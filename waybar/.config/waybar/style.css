@@ -54,7 +54,7 @@
 }
 
 #tray {
-  background: #1f1f1f;
+  background: transparent;
   color: #ffffff;
   margin-left: 12px;
 }
@@ -72,7 +72,7 @@
 }
 
 window#waybar {
-  background: transparent;
+  background: orange;
   border-bottom: 1px solid #332b2b;
   transition-duration: 0.2s;
   transition-property: background-color;
