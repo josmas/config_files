@@ -59,9 +59,15 @@ input "type:keyboard" {
 
 input "type:touchpad" {
   tap enabled
+  tap_button_map lrm
   natural_scroll enabled
   scroll_factor 0.5
 }
+
+input "type:pointer" {
+  natural_scroll enabled
+}
+
 #====================================#
 # Keyboard Shortcuts (Sway-specific) #
 #====================================#
