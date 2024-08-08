@@ -238,7 +238,7 @@ set $menu wofi --show drun  -i | xargs swaymsg exec --
 bindsym $mod+shift+b exec firefox
 
 # Open a file manager:
-bindsym ctrl+$mod+f exec pcmanfm
+bindsym ctrl+$mod+f exec nautilus&
 
 # Open a terminal emulator:
 set $term alacritty
