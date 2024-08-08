@@ -1,0 +1,35 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the '❯' symbol in the prompt
+[character]
+success_symbol = '[🍮➜](bold blue)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+error_symbol = '[✗](bold red) '
+vimcmd_symbol = '[V](bold green) '
+
+[container]
+format = '[$symbol \[$name\]]($style) '
+
+[directory]
+truncation_length = 8
+truncation_symbol = '…/'
+
+[git_branch]
+symbol = '🌱 '
+
+[git_status]
+conflicted = '🏳'
+ahead = '🏎💨'
+behind = '😰'
+diverged = '😵'
+up_to_date = '✓'
+untracked = '🤷'
+stashed = '📦'
+modified = '📝'
+staged = '[++\($count\)](green)'
+renamed = '👅'
+deleted = '🗑'
+
