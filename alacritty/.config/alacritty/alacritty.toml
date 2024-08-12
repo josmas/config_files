@@ -19,7 +19,8 @@ save_to_clipboard = true
 
 [keyboard]
 bindings = [
-  { key = "V", mods = "Control", action = "Paste" }
+  { key = "C", mods = "Alt", action = "Copy" },
+  { key = "V", mods = "Alt", action = "Paste" }
 ]
 
 [mouse]
