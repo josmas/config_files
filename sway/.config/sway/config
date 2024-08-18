@@ -57,6 +57,11 @@ input "type:keyboard" {
   xkb_options ctrl:nocaps
 }
 
+input "1452:591:Air75_BT5.0" {
+  xkb_layout us
+  xkb_options ctrl:nocaps
+}
+
 input "type:touchpad" {
   tap enabled
   tap_button_map lrm
