@@ -59,6 +59,7 @@ input "type:keyboard" {
 
 input "1452:591:Air75_BT5.0" {
   xkb_layout us
+  xkb_variant "altgr-intl"
   xkb_options ctrl:nocaps
 }
 
