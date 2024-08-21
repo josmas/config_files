@@ -19,7 +19,7 @@ set $background #332b2b
 set $color_urgent #fb4934
 set $text_color #ffffff
 set $title_bg_unfocused #666666
-set $title_outline_active #0e844e
+set $title_outline_active #FF5f44
 set $title_outline_unfocused #332b2b
 
 # Set Colors:           Border                   Background          Text          Indicator             Child Border
@@ -30,8 +30,8 @@ client.unfocused        $title_outline_unfocused $title_bg_unfocused $text_color
 client.urgent           $color_urgent            $color_urgent       $color_urgent $color_urgent         $color_urgent
 
 # Add gaps in between all application windows:
-gaps inner 3
-gaps outer 3
+gaps inner 1
+gaps outer 2
 
 # Configure the default border:
 default_border pixel 4
