@@ -281,3 +281,5 @@ exec wl-paste --watch cliphist store
 bindsym Mod1+p exec cliphist list | wofi -S dmenu | cliphist decode | wl-copy
 # bindsym Mod1+p exec cliphist list | fzf | cliphist decode | wl-copy
 
+# polkit creds - install ukui-polkit package
+exec_always /usr/lib/x86_64-linux-gnu/ukui-polkit/polkit-ukui-authentication-agent-1
