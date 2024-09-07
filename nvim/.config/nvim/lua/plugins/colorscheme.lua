@@ -42,7 +42,7 @@ return {
     },
   },
   {
-    "LazyVim/Lazyvim",
+    "LazyVim/LazyVim",
     opts = { colorscheme = "catppuccin" },
   },
 }
