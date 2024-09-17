@@ -10,11 +10,17 @@ alias ONE="| awk '{ print \$1}'"
 alias g="git"
 alias v="nvim"
 alias t="tmux"
+alias ta="tmux attach || tmux"
+alias tls="tmux ls"
 alias dps="docker ps"
 alias k="kubectl"
 
 alias bat="bat --theme=GitHub --color=always"
 alias cat=bat
+alias fat='cat "$(fzf)"'
+
+alias zain="z ain"
+alias zfig="z fig"
 
 alias tpic='grim -g "$(slurp)" - | swappy -f -'
 # I can use the following command and pass -f name.format in terminal
