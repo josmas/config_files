@@ -63,6 +63,12 @@ input "1452:591:Air75_BT5.0" {
   xkb_options ctrl:nocaps
 }
 
+input "1452:591:BY_Tech_Air75" {
+  xkb_layout us
+  xkb_variant "altgr-intl"
+  xkb_options ctrl:nocaps
+}
+
 input "type:touchpad" {
   tap enabled
   tap_button_map lrm
@@ -164,6 +170,7 @@ set $ws2 "2 - Browsing"
 set $ws3 "3 - Config"
 set $ws4 "4 - Writing"
 set $ws5 "5 - Misc"
+set $ws6 "6 - Extra"
 
 # Move between workspaces
 bindsym $mod+1 workspace $ws1
@@ -171,6 +178,7 @@ bindsym $mod+2 workspace $ws2
 bindsym $mod+3 workspace $ws3
 bindsym $mod+4 workspace $ws4
 bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
 
 # Move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -178,6 +186,7 @@ bindsym $mod+Shift+2 move container to workspace $ws2
 bindsym $mod+Shift+3 move container to workspace $ws3
 bindsym $mod+Shift+4 move container to workspace $ws4
 bindsym $mod+Shift+5 move container to workspace $ws5
+bindsym $mod+Shift+6 move container to workspace $ws6
 
 
 #=============================#
@@ -281,5 +290,6 @@ exec wl-paste --watch cliphist store
 bindsym Mod1+p exec cliphist list | wofi -S dmenu | cliphist decode | wl-copy
 # bindsym Mod1+p exec cliphist list | fzf | cliphist decode | wl-copy
 
-# polkit creds - install ukui-polkit package
-exec_always /usr/lib/x86_64-linux-gnu/ukui-polkit/polkit-ukui-authentication-agent-1
+# polkit creds - install ukui-polkit package (ubuntu), polkit-gnome (Arch) or some other option
+# exec_always /usr/lib/x86_64-linux-gnu/ukui-polkit/polkit-ukui-authentication-agent-1
+exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
