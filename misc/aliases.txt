@@ -13,3 +13,4 @@ alias t="tmux"
 alias dps="docker ps"
 alias k="kubectl"
 
+ alias gde="git diff ':(exclude)package-lock.json'"

@@ -11,5 +11,8 @@
   lg = log --pretty=format:'%h - %an, %s' --graph
 [core]
   editor = vim
+  pager = less -x2
 [color]
   ui = true
+[init]
+  defaultBranch = main
