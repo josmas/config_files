@@ -14,3 +14,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.fn.setreg("l", "yoconsole.log('" .. esc .. "pa:" .. esc .. "la, " .. esc .. "pl")
   end,
 })
+
+-- copy everything between two brackets, including the brackets
+-- p to paste after and P to paste before the cursor
+vim.keymap.set("n", "YY", "va{Vy", { noremap = true, silent = true })
